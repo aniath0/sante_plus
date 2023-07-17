@@ -1,0 +1,61 @@
+{% load static%}
+ <!-- ======= Sidebar ======= -->
+ <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'dashbord' %}">
+          <i class="bi bi-grid"></i>
+          <span>Dashbord</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+            <!--li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#visites" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-bell-fill"></i><span> mes rendez-vous</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="visites" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                  <a href="{% url 'rendezvous.index_patient' %}">
+                    <i class="bi bi-circle"></i><span>Liste des visites</span>
+                  </a>
+                </li>
+              </ul>
+            </li--><!-- End Tables Nav -->
+            <a class="nav-link collapsed" data-bs-target="#rendezvous"  href="{% url 'rendezvous.index_patient' %}">
+              <i class="bi bi-bell-fill"></i> Mes rendez-vous 
+            </a>
+
+         </li--><!-- End Forms Nav -->  
+         
+        <!--li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#visites" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-bell-fill"></i><span>Mon dossier</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="visites" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="{% url 'dossierpatients.index_patient' %}">
+                <i class="bi bi-circle"></i><span>Mon dossier</span>
+              </a>
+            </li>
+          </ul>
+        </li--><!-- End Tables Nav -->
+        <a class="nav-link collapsed" data-bs-target="#rendezvous"  href="{% url 'dossierpatients.index_patient' %}">
+          <i class="bi bi-bell-fill"></i>Mon dossier
+        </a>
+     </li><!-- End Forms Nav --> 
+
+
+     <a class="nav-link collapsed" data-bs-target="#rendezvous"  href="{% url 'rendezvous.ancien_rendez_vous' %}">
+      <i class="bi bi-bell-fill"></i> Mes anciens rendez-vous 
+    </a>
+                      
+     
+
+
+                
+
+    </ul>
+
+  </aside>
+  <!-- End Sidebar-->
